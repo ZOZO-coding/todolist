@@ -1,39 +1,88 @@
-.App {
-  text-align: center;
+.App{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(179, 170, 150);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-items: center;
+    background: url('./assets/noaa-ZVhm6rEKEX8-unsplash.jpeg') no-repeat center center/cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_container{
+    height: auto;
+    min-height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(200, 170, 150);
+    border-radius: 12px;
+    padding: 32px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+.app_todoContainer{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app_weatherContainer{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem;
+    justify-content: center;
   }
+
+.top{
+    width: 100%;
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+}
+.bottom{
+    width: 100%;
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 10% 10%;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app_weatherContainer .search{
+    text-align: center;
+    padding-bottom: 10%;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.app_weatherContainer input{
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border: 1px solid rgba(44, 28, 136, 0);
+    border-radius: 25px;
+    background-color: white;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.app_calculatorContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex: 0.5;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem;
+    justify-content: center;
   }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    order: 1;
 }
