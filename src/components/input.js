@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './input.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { saveTodo } from '../features/todo/todoSlice';
 
 const Input = () => {

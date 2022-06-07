@@ -60,6 +60,7 @@
 .app_weatherContainer .search{
     text-align: center;
     padding-bottom: 10%;
+    margin: auto;
 }
 
 .app_weatherContainer input{
@@ -85,4 +86,6 @@
     display: flex;
     flex-direction: column;
     order: 1;
+    width: fit-content;
+    margin: auto;
 }

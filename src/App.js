@@ -27,9 +27,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className='Navbar'>
-        <Navbar />
-      </div>
       
       <div className='app_weatherContainer'>
         <div className='search'>
@@ -62,6 +59,9 @@ function App() {
           <div className='wind'>
           {data.wind ? <p>Wind Speed {data.wind.speed}</p> : null}
           </div>
+        </div>
+        <div className='Navbar'>
+          <Navbar />
         </div>
       </div>
 
